@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/x_erica/static/css/main.19241ed3.css",
+    "main.js": "/x_erica/static/js/main.20de71f6.js",
+    "index.html": "/x_erica/index.html",
+    "main.19241ed3.css.map": "/x_erica/static/css/main.19241ed3.css.map",
+    "main.20de71f6.js.map": "/x_erica/static/js/main.20de71f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19241ed3.css",
+    "static/js/main.20de71f6.js"
+  ]
+}
