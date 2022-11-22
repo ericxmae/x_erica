@@ -1,38 +1,163 @@
-.App {
+@import './styles/variables.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#root {
+  display: flex;
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300rem;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 150rem;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+p {
+  text-align: justify;
+}
+
+h1, h2, p {
+  padding: 0;
+  margin: 0;
+
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  padding: 12px 24px;
+  color: var(--white);
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--blue);
+  border: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+    color: var(--black);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 5rem;
+    min-height: 100%;
+    min-width: 50%;
+}
+
+
+.about-container {
+  padding: 100px;
+  align-items: left;
+  background-color: var(--blue);
+  }
+
+.name-row {
+  text-shadow: -2px 2px var(--white-shadow);
+}
+
+.about-items {
+  padding: 0.8rem;
+}
+
+
+.project-container {
+  align-items: center;
+  justify-content: center;
+
+}
+
+.wrapper{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.socials-wrapper, .button-wrapper {
+  padding: 1rem;
+  min-width: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.span-bottom:before {
+  content: '';
+  background-color: var(--black);
+  display: block;
+  height: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.span-top {
+  padding:  1rem;
+}
+
+.span-note {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 0.5rem;
+  color: var(--blue);
+}
+
+.span-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+/*media query*/
+
+@media (min-width: 1024px){
+.container {
+    padding: 1rem;
+    min-height: 100%;
+    min-width: 50%;
+}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 1024px){
+    .skills-row h2 {
+  text-align: left;
+}
+}
+
+@media (max-width: 912px){
+.app {
+  padding: 0;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+    color: var(--black);
+
+}
+
 }
