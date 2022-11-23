@@ -36,7 +36,7 @@ export default function App() {
 
             <div className="button-wrapper wrapper">
                 <a href="https://zuitt-final-project.vercel.app/"><button>E-Commerce Site</button></a>
-                <a href="https://github.com/ericxmae/web-portfolio/deployments/activity_log?environment=github-pages"><button className="button-slide">Static Site</button></a>
+                <a href="https://ericxmae.github.io/web-portfolio/"><button className="button-slide">Static Site</button></a>
             </div>
             <span className="span-bottom"></span>
             <div className="socials-wrapper wrapper">
